@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+//need a tree Node which have data and left pointer to store the address of left child
+//right pointer to store the right child
+ 
+struct TreeNode{
+    int data;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int val){
+        data = val;
+        left = right = NULL;
+    }
+};
+ 
+int main(){
+    TreeNode *root = new Node(10);
+    TreeNode *c1 = new Node(20);
+    TreeNode *c2 = new Node(30);
+    
+    root->left = c1;
+    root->right = c2;
+    TreeNode *c11 = new Node(40);
+    TreeNode *c12 = new Node(50);
+    c1->left = c11;
+    c1->right = c12;
+    
+}
